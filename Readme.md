@@ -2,6 +2,8 @@
 
 A simple NSNumber class extension that provides better formatting for currency.
 
+Use this to correctly round an NSNumber to the 2nd decimal point based on standard "round half-up" methodology in order to calculate tax and percentages of currency, etc.
+
 ## How to install:
 
 If you're not using [CocoaPods](http://cocoapods.org/), you should be. Simply add ```pod 'MRCurrencyRound'``` to your ```Podfile```
