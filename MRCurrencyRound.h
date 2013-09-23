@@ -10,5 +10,6 @@
 @interface NSNumber (MRCurrencyRound)
 
   -(NSNumber *)currencyRound;
+  -(NSString *)currencyString;
 
 @end
