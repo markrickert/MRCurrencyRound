@@ -16,6 +16,7 @@ static NSString *kSharedNumberFormatterCurrencyStyleLock = @"kSharedNumberFormat
 {
   NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
   [formatter setMaximumFractionDigits:2];
+  [formatter setRoundingIncrement:[NSNumber numberWithDouble:0.01]];
   [formatter setRoundingMode: NSNumberFormatterRoundHalfUp];
 
   NSString *formattedString = [formatter stringFromNumber:[NSNumber numberWithFloat:[self floatValue]]];
